@@ -1,0 +1,93 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/font/FM-Aba-Bold.TTF",
+      "sha1": "d897c1028d9291d65e66486cf041b836b427f943"
+    },
+    {
+      "path": "src/font/FM-Abbaya.TTF",
+      "sha1": "7ea370b0bde9b9bb843ef8bad9c0ccff9c8eaf14"
+    },
+    {
+      "path": "src/font/FM-Abhaya-x.TTF",
+      "sha1": "7ea370b0bde9b9bb843ef8bad9c0ccff9c8eaf14"
+    },
+    {
+      "path": "src/font/FM-Abhaya.TTF",
+      "sha1": "7ea370b0bde9b9bb843ef8bad9c0ccff9c8eaf14"
+    },
+    {
+      "path": "src/font/FM-Arjunn.TTF",
+      "sha1": "208a8500793aadf9831d9a91ce0fe221a65dd4c6"
+    },
+    {
+      "path": "src/font/FM-Basuru.TTF",
+      "sha1": "e36f0c028999db3da438aaeeb94bb6988f777715"
+    },
+    {
+      "path": "src/font/FM-Bindu-x.TTF",
+      "sha1": "a08f56d03587a0ddb926fa02def591f590318001"
+    },
+    {
+      "path": "src/font/FM-Bindumathi.TTF",
+      "sha1": "a08f56d03587a0ddb926fa02def591f590318001"
+    },
+    {
+      "path": "src/font/FM-Derana.TTF",
+      "sha1": "976d31f51eecc7fc040e3da358a23338355cc163"
+    },
+    {
+      "path": "src/font/FM-DeranaX.TTF",
+      "sha1": "976d31f51eecc7fc040e3da358a23338355cc163"
+    },
+    {
+      "path": "src/font/FM-eb.TTF",
+      "sha1": "1f1a0fbba8ce39fc5b5dfd402946f2ca3629d4d5"
+    },
+    {
+      "path": "src/font/FM-Emanee.TTF",
+      "sha1": "031845e3e7ad39abd988926cc394ddfa6b2bc5d3"
+    },
+    {
+      "path": "src/font/FM-Ganganee.TTF",
+      "sha1": "a900d42275f614f090fcc91bbd4fdc23d3b89e73"
+    },
+    {
+      "path": "src/font/FM-Gangani.TTF",
+      "sha1": "a900d42275f614f090fcc91bbd4fdc23d3b89e73"
+    },
+    {
+      "path": "src/font/fm-gemun.ttf",
+      "sha1": "6d862459bc40bb831f5ee5df1c53445978e956d7"
+    },
+    {
+      "path": "src/font/FM-Gemunu.TTF",
+      "sha1": "6d862459bc40bb831f5ee5df1c53445978e956d7"
+    },
+    {
+      "path": "src/font/FM-Malithi-x.TTF",
+      "sha1": "b02f619e6665626b1c7603ce2081c1eddfce230d"
+    },
+    {
+      "path": "src/font/FM-Malithi.TTF",
+      "sha1": "7da88e257c55e630ac67565fb2385644e9b580ae"
+    },
+    {
+      "path": "src/font/FM-Rajantha.TTF",
+      "sha1": "0ffe1907d5e7352fc45177b46292c1eb621ce811"
+    },
+    {
+      "path": "src/font/FM-saman.ttf",
+      "sha1": "489b941a6ac929de0dff602898572f308892ae77"
+    },
+    {
+      "path": "src/font/FM-Samantha.TTF",
+      "sha1": "489b941a6ac929de0dff602898572f308892ae77"
+    },
+    {
+      "path": "src/font/FMBindumathi.TTF",
+      "sha1": "a08f56d03587a0ddb926fa02def591f590318001"
+    }
+  ]
+}
