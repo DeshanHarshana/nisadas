@@ -10,6 +10,7 @@
   "dependencies": {
     "@react-navigation/material-bottom-tabs": "^6.2.16",
     "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.13",
     "expo": "~48.0.18",
     "expo-app-loading": "^2.1.1",
     "expo-font": "~11.1.1",
@@ -20,7 +21,9 @@
     "react-native-paper": "^5.9.1",
     "react-native-splash-screen": "^3.3.0",
     "react-native-vector-icons": "^9.2.0",
-    "react-navigation": "^4.4.4"
+    "react-navigation": "^4.4.4",
+    "sinhala-unicode-coverter": "^1.0.2",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

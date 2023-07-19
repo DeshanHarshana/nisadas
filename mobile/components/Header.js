@@ -4,18 +4,22 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <View>
-      <Text style={styles.container}>කෙටි කතා අරණ</Text>
+    <View style={{ backgroundColor: "rgba(52, 52, 52, 0)"}}>
+      <Text style={styles.index}>is;=ú,s wimqj</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#f5d7d5',
+    index: {
+        fontFamily: 'fm-gangani',
+        backgroundColor: '#ffe6cc',
         textAlign: 'center',
-        paddingTop:StatusBar.currentHeight+5,
-        fontWeight: 'bold',
-        fontSize: 20,
+        paddingTop:StatusBar.currentHeight+10,
+        fontSize: 30,
+        paddingBottom: 10,
+        borderBottomLeftRadius: 40,
+        borderBottomRightRadius: 40,
     }
 })
+

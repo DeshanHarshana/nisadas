@@ -1,22 +1,28 @@
-import { useCallback } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Header from './components/Header';
-import Home from './screen/Home';
-import Katha from './screen/Katha';
-import Nisadas from './screen/Nisadas';
-import Profile from './screen/Profile';
+import { useCallback } from "react";
+import { Text, View, StyleSheet } from "react-native";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import { NavigationContainer } from "@react-navigation/native";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import Header from "./components/Header";
+import Home from "./screen/Home";
+import Katha from "./screen/Katha";
+import Nisadas from "./screen/Nisadas";
+import Profile from "./screen/Profile";
+import Viewer from "./screen/Viewer";
 const Tab = createMaterialBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'fm-gemun': require('./assets/fonts/fm-gemun.ttf'),
-    'fm-malithi': require('./assets/fonts/fm-malithi.ttf'),
+    "fm-gemun": require("./assets/fonts/fm-gemun.ttf"),
+    "fm-malithi": require("./assets/fonts/fm-malithi.ttf"),
+    "fm-bindumathi": require("./assets/fonts/fm-bindumathi.ttf"),
+    "fm-abbaya": require("./assets/fonts/fm-abbaya.ttf"),
+    "fm-gangani": require("./assets/fonts/fm-gangani.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -30,57 +36,66 @@ export default function App() {
   }
 
   return (
-    <View style={{flex:1}} onLayout={onLayoutRootView}>
+    <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
       <NavigationContainer>
-      <Header />
-    <Tab.Navigator
-      initialRouteName="Feed"
-      activeColor="#e91e63"
-      labelStyle={{ fontSize: 12 }}
-      style={{ backgroundColor: 'tomato' }}
-    >
-      <Tab.Screen
-        name="nisadas"
-        component={Home}
-        options={{
-          tabBarLabel: 'නිසදැස්',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Katha"
-        component={Katha}
-        options={{
-          tabBarLabel: 'කතා',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bell" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="wadan"
-        component={Nisadas}
-        options={{
-          tabBarLabel: 'වදන්',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'ඔබ ගැන',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={26} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-    </NavigationContainer>
+        <Header />
+        
+        <Tab.Navigator
+          initialRouteName="Feed"
+          activeColor="#e91e63"
+          labelStyle={{ fontSize: 12 }}
+          style={{ backgroundColor: "tomato" }}
+        >
+          <Tab.Screen
+            name="nisadas"
+            component={Home}
+            options={{
+              tabBarLabel: "නිසදැස්",
+              tabBarIcon: ({ color }) => (
+                <MaterialCommunityIcons name="home" color={color} size={26} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Katha"
+            component={Katha}
+            options={{
+              tabBarLabel: "කතා",
+              tabBarIcon: ({ color }) => (
+                <MaterialCommunityIcons name="bell" color={color} size={26} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="wadan"
+            component={Nisadas}
+            options={{
+              tabBarLabel: "වදන්",
+              tabBarIcon: ({ color }) => (
+                <MaterialCommunityIcons
+                  name="account"
+                  color={color}
+                  size={26}
+                />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Profile"
+            component={Profile}
+            options={{
+              tabBarLabel: "ඔබ ගැන",
+              tabBarIcon: ({ color }) => (
+                <MaterialCommunityIcons
+                  name="account"
+                  color={color}
+                  size={26}
+                />
+              ),
+            }}
+          />
+        </Tab.Navigator>
+      </NavigationContainer>
     </View>
   );
 }
@@ -88,7 +103,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
